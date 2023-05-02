@@ -1,0 +1,4 @@
+.vagrant
+scripts/clab-free5gc-net
+*.dic
+*bak

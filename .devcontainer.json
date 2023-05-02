@@ -1,0 +1,17 @@
+{
+    "image": "mcr.microsoft.com/vscode/devcontainers/base:ubuntu-20.04",
+    "features": {
+        "ghcr.io/devcontainers/features/docker-in-docker:1": {},
+        "ghcr.io/electrocucaracha/pkg-mgr_scripts/kubectl:latest": {
+            "pkg_krew_plugins_list": "ctx"
+        },
+        "ghcr.io/electrocucaracha/pkg-mgr_scripts/cni-plugins:latest": {
+            "pkg_cni_plugins_install_flannel": false
+        }
+    },
+    "hostRequirements": {
+        "cpus": 4,
+        "memory": "8gb"
+    },
+    "postCreateCommand": "cd scripts/; ./main.sh | tee ~/main.log"
+}
