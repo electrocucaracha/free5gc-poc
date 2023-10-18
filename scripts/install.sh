@@ -16,7 +16,7 @@ if [[ ${DEBUG:-false} == "true" ]]; then
     export PKG_DEBUG=true
 fi
 
-export CLUSTER_API_VERSION=1.4.2
+export CLUSTER_API_VERSION=1.5.2
 
 # Install dependencies
 # NOTE: Shorten link -> https://github.com/electrocucaracha/pkg-mgr_scripts
