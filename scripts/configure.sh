@@ -26,7 +26,7 @@ kind: Cluster
 apiVersion: kind.x-k8s.io/v1alpha4
 nodes:
   - role: control-plane
-    image: kindest/node:v1.27.1
+    image: kindest/node:v1.28.0
     extraMounts:
       - hostPath: /var/run/docker.sock
         containerPath: /var/run/docker.sock
